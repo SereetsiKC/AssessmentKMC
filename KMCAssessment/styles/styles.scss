@@ -1,0 +1,38 @@
+@import 'font-awesome/css/font-awesome.css';
+@import 'variables.scss';
+@import 'bootstrap/scss/bootstrap.scss';
+
+
+
+
+body {
+    background-color: $Blue !important
+}
+
+.mandatory:after {
+    content: "\f069";
+    font-family: FontAwesome;
+    font-size: 12px;
+    color: $Red;
+    padding-left: 5px;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+@media screen and (min-width:600px) {
+    .container {
+        width: 30vw !important;
+        height: auto;
+        background-color: $white !important;
+        margin-top: 10vw !important;
+        margin-left: 35vw !important;
+        border-radius: 5px !important;
+        position: fixed;
+
+        .form-container {
+            background-color: $white !important;
+        }
+    }
+}

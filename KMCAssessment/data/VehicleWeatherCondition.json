@@ -1,0 +1,25 @@
+[{
+  "weatherCondition_Id": 1,
+  "vehicle_id": 1
+}, {
+  "weatherCondition_Id": 1,
+  "vehicle_id": 2
+}, {
+  "weatherCondition_Id": 1,
+  "vehicle_id": 3
+}, {
+  "weatherCondition_Id": 2,
+  "vehicle_id": 2
+}, {
+  "weatherCondition_Id": 2,
+  "vehicle_id": 3
+}, {
+  "weatherCondition_Id": 3,
+  "vehicle_id": 1
+}, {
+  "weatherCondition_Id": 3,
+  "vehicle_id": 2
+}, {
+  "weatherCondition_Id": 3,
+  "vehicle_id": 3
+}]

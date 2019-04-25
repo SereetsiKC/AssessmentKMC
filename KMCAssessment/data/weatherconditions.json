@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "condition": "Sunny",
+    "reducer": 10,
+    "increaser": 0
+  },
+  {
+    "id": 2,
+    "condition": "Rainy",
+    "reducer": 0,
+    "increaser": 20
+  }, {
+    "id": 3,
+    "condition": "Windy",
+    "reducer": 0,
+    "increaser": 0
+  }
+
+]

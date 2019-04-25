@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "Type": "Bike",
+    "Speed": 10,
+    "TimePerCrater": 2
+  },
+  {
+    "id": 2,
+    "Type": "Tuktuk",
+    "Speed": 12,
+    "TimePerCrater": 1
+  },
+  {
+    "id": 3,
+    "Type": "Car",
+    "Speed": 20,
+    "TimePerCrater": 3
+  }
+]

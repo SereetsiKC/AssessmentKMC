@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assessment-kmc</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="col-md-12 form-contents">
+                <div class="header text-center">
+                    <div class="h4 center-block text-center">Determine Obit and Vehicle to Use </div>
+                    <hr>
+                </div>
+                <form id="form-inputs">
+                    <div class="form-group">
+                        <label for="WCondition" class="mandatory">Select Weather Condition</label>
+                        <select id="WCondition" class="form-control" data-bind=" options : WConditionOptions, optionsCaption: 'Select...',optionsText : 'condition',optionsValue:'id',value : WCondition" name="WCondition"></select>
+                        <!--ko if:WConditionhasError-->
+                        <div class="alert alert-danger">
+                            Weather Condition is required!
+                        </div>
+                        <!--/ko-->
+                    </div>
+                    <div class="form-group">
+                        <label for="Obit1" class="mandatory">Obit 1 Traffic Speed</label>
+                        <input type="text" name="Obit1" id="Obit1" class="form-control" data-bind="value:ObitOne" />
+                        <!--ko if:ObitOnehasError-->
+                        <div class="alert alert-danger">
+                            Obit 1 Traffic Speed is required!
+                        </div>
+                        <!--/ko-->
+                    </div>
+                    <div class="form-group">
+                        <label for="Obit2" class="mandatory">Obit 2 Traffic Speed</label>
+                        <input type="text" name="Obit2" id="Obit2" class="form-control" data-bind="value:ObitTwo" />
+                        <!--ko if:ObitTwohasError-->
+                        <div class="alert alert-danger">
+                            Obit 2 Traffic Speed is required!
+                        </div>
+                        <!--/ko-->
+                    </div>
+                    <div class="form-group">
+                        <input type="button" data-bind="click:Submit" value="Submit" class="btn btn-success btn-block" />
+                    </div>
+                </form>
+                <!--ko if:displayResult-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong class="col-md-2">Input :</strong>
+                        <span class="col-md-10" data-bind="text:'Weather is ' + results.Weather()"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <strong class="col-md-2">Input :</strong>
+                        <span class="col-md-10" data-bind="text:'Obit1 traffic speed is ' + String(results.ObitOneSpeedLimit()) + ' megamiles/hour'"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <strong class="col-md-2">Input :</strong>
+                        <span class="col-md-10" data-bind="text:'Obit2 traffic speed is ' + String(results.ObitTwoSpeedLimit()) + ' megamiles/hour'"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <strong class="col-md-2">Output :</strong>
+                        <span class="col-md-10" data-bind="text:'Vehicle '+results.car() +' on '+ results.FasterRoute()"></span>
+                    </div>
+                </div>
+                <hr>
+                <!--/ko-->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="styles/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="Helpers/services.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

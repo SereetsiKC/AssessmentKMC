@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "Name": "Obit 1",
+    "Distance": 18,
+    "CratersToCross": 20,
+    "SpeedLimit": 0
+
+  },
+  {
+    "id": 2,
+    "Name": "Obit 2",
+    "Distance": 20,
+    "CratersToCross": 10,
+    "SpeedLimit": 0
+  }
+]
